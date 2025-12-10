@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    margin: 0;
+    direction: rtl;
+}
+.container {
+    background-color: #2d2d2d78;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+}
+h1 {
+    color: #eeeded;
+    text-align: center;
+    border-bottom: 2px solid #666666;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+#todo-form {
+    display: flex;
+    margin-bottom: 10px;
+}
+#todo-input {
+    flex-grow: 1;
+    background-color: #343333;
+    padding: 10px 15px;
+    
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+#todo-input:hover{
+    background-color: #605e5e;
+    border: 2px solid #ffffff;
+}
+#todo-input:focus {
+    border-color: #adadadfe;
+}
+#todo-form button {
+    background-color: #5b5a5894;
+    color: rgb(27, 27, 27);
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 26px;
+    transition: background-color 0.3s;
+}
+
+#todo-form button:hover {
+    background-color: #e3e8eb74;
+    border: 2px solid #ffffff;
+}
+#todo-list {
+    list-style: none;
+    padding: 0;
+}
+#todo-list li {
+    background-color: #857f7f;
+    padding: 12px 15px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+    border-right: 5px solid #0078d4;
+    transition: background-color 0.2s;
+}
+.completed {
+    text-decoration: line-through;
+    color: #343333;
+    background-color: #bcbcbc !important;
+    border-right-color: #4CAF50 !important;
+}
+.delete-btn {
+    background: none;
+    border: none;
+    color: #ff0000;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 0 5px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+.delete-btn:hover {
+    opacity: 1;
+}
+#no-tasks-message {
+    text-align: center;
+    color: #1a1919;
+    margin-top: 30px;
+    font-style: italic;
+    padding: 15px;
+    background-color: #a9a9a9;
+    border: 1px solid #fbfbfb;
+    border-radius: 4px;
+}
